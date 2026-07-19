@@ -53,13 +53,12 @@
                 <div>
 
                     <picture>
-                        <source media="(min-width: 404px )" srcset="images/majorca-beach-square-s.jpg">
+                        <source media="(min-width: 1280px)" srcset="images/majorca-beach-horizontal-l.jpg">
 
-                        <source media="(min-width: 920px )" srcset="images/majorca-beach-vertical-m.jpg">
+                        <source media="(min-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg">
 
-                        <source media="(min-width: 1280px )" srcset="images/majorca-beach-horizontal-l.jpg">
-
-                        <img src="majorca-beach-square-s.jpg" alt="Sea waves crashing during sunset">
+                        <img src="images/majorca-beach-square-s.jpg"
+                            alt="Sea waves crashing on the shore during sunset">
                     </picture>
 
                     <small>Photo by <a
@@ -150,7 +149,7 @@
                 <section>
                     <img src="images/max-winter-L.png" srcset="
                       images/max-winter-S.png 404w,
-                      mages/max-winter-M.png 920w,
+                      images/max-winter-M.png 920w,
                       images/max-winter-L.png 1280w " sizes="
                           (max-width: 500px) 100vw,
                           (max-width: 1000px) 90vw,
@@ -167,7 +166,9 @@
                             <dt>Traveling From:</dt>
                             <dd>Berlin, Germany</dd>
                         </dl>
-                        "Great escape from my reality. Beautiful sunsets, wonderful people, great beer."
+                        <blockquote>
+                            "Great escape from my reality. Beautiful sunsets, wonderful people, great beer."
+                        </blockquote>
                     </div>
                 </section>
                 <section>
@@ -190,7 +191,9 @@
                             <dt>Traveling From:</dt>
                             <dd>Barcelona, Spain</dd>
                         </dl>
-                        "A very safe environment for all travelers."
+                        <blockquote>
+                            "A very safe environment for all travelers."
+                        </blockquote>
                     </div>
                 </section>
                 <section>
@@ -213,7 +216,9 @@
                             <dt>Traveling From:</dt>
                             <dd>Madrid, Spain</dd>
                         </dl>
-                        "Live, laugh, love-- everything you need in Majorca."
+                        <blockquote>
+                            "Live, laugh, love-- everything you need in Majorca."
+                        </blockquote>
                     </div>
                 </section>
             </section>
@@ -291,19 +296,19 @@
 
             <div>
                 <label for="first-name">First Name<span class="required">*</span></label>
-                <input type="text" id="first-name" name="first-name">
+                <input type="text" id="first-name" name="first-name" required>
             </div>
             <div>
                 <label for="last-name">Last Name<span class="required">*</span></label>
-                <input type="text" id="last-name" name="last-name">
+                <input type="text" id="last-name" name="last-name" required>
             </div>
             <div>
                 <label for="email">Email<span class="required">*</span></label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
             <div>
                 <label for="phone">Phone<span class="required">*</span></label>
-                <input type="tel" id="phone" name="phone">
+                <input type="tel" id="phone" name="phone" required>
             </div>
 
             <fieldset id="preferred-contact">
@@ -327,40 +332,34 @@
                     <label for="contact-phone">Phone</label>
                 </div>
             </fieldset>
-            <div id="destination">
-                <label for="select-destination">
-                    Destination <span class="required">*</span>
-                </label>
-
+            <fieldset id="destination">
+                <legend>Destination<span>*</span></legend>
                 <select id="select-destination" name="destination" required>
-                    <fieldset id="destination">
-                        <legend>Destination<span>*</span></legend>
-                        <select id="select-destination">
-                            <option>Choose</option>
-                            <option>Barcelona</option>
-                            <option>Granada</option>
-                            <option>Ibiza</option>
-                            <option>Madrid</option>
-                            <option>Majorca</option>
-                            <option>Seville</option>
-                            <option>Tenerife</option>
-                            <option>Valencia</option>
-                            <option>Other</option>
-                        </select>
-                    </fieldset>
-                    <fieldset id="travelTime">
-                        <legend>Travel Time<span>*</span></legend>
-                        <select id="select-travel-time">
-                            <option>Choose</option>
-                            <option>Fall</option>
-                            <option>Winter</option>
-                            <option>Spring</option>
-                            <option>Summer</option>
-                            <option>Flexible</option>
-                        </select>
+                    <option>Choose</option>
+                    <option>Barcelona</option>
+                    <option>Granada</option>
+                    <option>Ibiza</option>
+                    <option>Madrid</option>
+                    <option>Majorca</option>
+                    <option>Seville</option>
+                    <option>Tenerife</option>
+                    <option>Valencia</option>
+                    <option>Other</option>
+                </select>
+            </fieldset>
+            <fieldset id="travelTime">
+                <legend>Travel Time<span>*</span></legend>
+                <select id="select-travel-time" name="travel-time" required>
+                    <option>Choose</option>
+                    <option>Fall</option>
+                    <option>Winter</option>
+                    <option>Spring</option>
+                    <option>Summer</option>
+                    <option>Flexible</option>
+                </select>
 
-                        <input type="submit" id="submit" value="Submit"> <!-- SUBMIT BUTTON-->
-                    </fieldset>
+                <input type="submit" id="submit" value="Submit"> <!-- SUBMIT BUTTON-->
+            </fieldset>
 
         </section>
         <section id="legal">
