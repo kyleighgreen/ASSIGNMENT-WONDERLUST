@@ -305,21 +305,7 @@
                 <label for="phone">Phone<span class="required">*</span></label>
                 <input type="tel" id="phone" name="phone">
             </div>
-            <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span class="required">*</span></legend>
-                <div>
-                    <input type="radio">
-                    <label for="email">Email</label>
-                </div>
-                <div>
-                    <input type="radio">
-                    <label>Text</label>
-                </div>
-                <div>
-                    <input type="radio">
-                    <label for="phone">Phone</label>
-                </div>
-            </fieldset>
+
             <fieldset id="preferred-contact">
                 <legend>
                     Preferred Contact Method
@@ -341,34 +327,40 @@
                     <label for="contact-phone">Phone</label>
                 </div>
             </fieldset>
-            <fieldset id="destination">
-                <legend>Destination<span>*</span></legend>
-                <select id="select-destination">
-                    <option>Choose</option>
-                    <option>Barcelona</option>
-                    <option>Granada</option>
-                    <option>Ibiza</option>
-                    <option>Madrid</option>
-                    <option>Majorca</option>
-                    <option>Seville</option>
-                    <option>Tenerife</option>
-                    <option>Valencia</option>
-                    <option>Other</option>
-                </select>
-            </fieldset>
-            <fieldset id="travelTime">
-                <legend>Travel Time<span>*</span></legend>
-                <select id="select-travel-time">
-                    <option>Choose</option>
-                    <option>Fall</option>
-                    <option>Winter</option>
-                    <option>Spring</option>
-                    <option>Summer</option>
-                    <option>Flexible</option>
-                </select>
+            <div id="destination">
+                <label for="select-destination">
+                    Destination <span class="required">*</span>
+                </label>
 
-                <input type="submit" id="submit" value="Submit"> <!-- SUBMIT BUTTON-->
-            </fieldset>
+                <select id="select-destination" name="destination" required>
+                    <fieldset id="destination">
+                        <legend>Destination<span>*</span></legend>
+                        <select id="select-destination">
+                            <option>Choose</option>
+                            <option>Barcelona</option>
+                            <option>Granada</option>
+                            <option>Ibiza</option>
+                            <option>Madrid</option>
+                            <option>Majorca</option>
+                            <option>Seville</option>
+                            <option>Tenerife</option>
+                            <option>Valencia</option>
+                            <option>Other</option>
+                        </select>
+                    </fieldset>
+                    <fieldset id="travelTime">
+                        <legend>Travel Time<span>*</span></legend>
+                        <select id="select-travel-time">
+                            <option>Choose</option>
+                            <option>Fall</option>
+                            <option>Winter</option>
+                            <option>Spring</option>
+                            <option>Summer</option>
+                            <option>Flexible</option>
+                        </select>
+
+                        <input type="submit" id="submit" value="Submit"> <!-- SUBMIT BUTTON-->
+                    </fieldset>
 
         </section>
         <section id="legal">
